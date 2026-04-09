@@ -19,6 +19,12 @@ const formaciones = [
     titulo: 'Licenciatura en Psicología',
     institucion: 'UNMdP — 4 años cursados',
     descripcion: 'Formación en comprensión del comportamiento humano, análisis crítico y resolución de problemas complejos.'
+  },
+  {
+    icon: BookOpen,
+    titulo: 'Arquitectura y Calidad de Software',
+    institucion: 'Facultad de Ingeniería — Universidad Nacional de Colombia',
+    descripcion: 'Especialización en arquitectura de software, calidad, buenas prácticas y diseño de sistemas escalables.'
   }
 ];
 
