@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 
 const seminarios = [
   {
@@ -181,15 +181,6 @@ export function Seminarios() {
             transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1s'
           }}
         >
-          <a 
-            href="https://resourceldg.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-lime hover:text-white transition-colors duration-300"
-          >
-            <span>Ver más en resourceldg.github.io</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
         </div>
       </div>
     </section>
