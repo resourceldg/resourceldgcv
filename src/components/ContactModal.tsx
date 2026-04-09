@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Mail, Send, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -8,6 +9,10 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 
+const EMAILJS_SERVICE_ID = 'service_1bmalzo';
+const EMAILJS_TEMPLATE_ID = 'template_8y0hz3n';
+const EMAILJS_PUBLIC_KEY = 'yw7E4icl1vTC6mzQK';
+
 interface ContactModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -15,39 +20,50 @@ interface ContactModalProps {
 
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {
   const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    empresa: '',
-    mensaje: '',
+    name: '',
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          message: formData.message,
+          time: new Date().toLocaleString('es-ES', {
+            dateStyle: 'long',
+            timeStyle: 'short',
+          }),
+        },
+        EMAILJS_PUBLIC_KEY
+      );
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-
-    // Reset after showing success
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ nombre: '', email: '', empresa: '', mensaje: '' });
-      onClose();
-    }, 2000);
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: '', message: '' });
+        onClose();
+      }, 2000);
+    } catch {
+      setError('Hubo un error al enviar. Intenta de nuevo.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   return (
@@ -78,16 +94,16 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           <form onSubmit={handleSubmit} className="space-y-4 mt-4">
             <div>
               <label
-                htmlFor="nombre"
+                htmlFor="name"
                 className="block text-sm font-medium text-gray-3 mb-1"
               >
                 Nombre
               </label>
               <input
                 type="text"
-                id="nombre"
-                name="nombre"
-                value={formData.nombre}
+                id="name"
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 rounded-lg bg-black border border-gray-2 text-white placeholder-gray-3 focus:border-lime focus:outline-none focus:ring-1 focus:ring-lime transition-colors"
@@ -97,52 +113,15 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
             <div>
               <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-3 mb-1"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 rounded-lg bg-black border border-gray-2 text-white placeholder-gray-3 focus:border-lime focus:outline-none focus:ring-1 focus:ring-lime transition-colors"
-                placeholder="tu@email.com"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="empresa"
-                className="block text-sm font-medium text-gray-3 mb-1"
-              >
-                Empresa (opcional)
-              </label>
-              <input
-                type="text"
-                id="empresa"
-                name="empresa"
-                value={formData.empresa}
-                onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-black border border-gray-2 text-white placeholder-gray-3 focus:border-lime focus:outline-none focus:ring-1 focus:ring-lime transition-colors"
-                placeholder="Nombre de tu empresa"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="mensaje"
+                htmlFor="message"
                 className="block text-sm font-medium text-gray-3 mb-1"
               >
                 Mensaje
               </label>
               <textarea
-                id="mensaje"
-                name="mensaje"
-                value={formData.mensaje}
+                id="message"
+                name="message"
+                value={formData.message}
                 onChange={handleChange}
                 required
                 rows={4}
@@ -150,6 +129,10 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 placeholder="¿En qué puedo ayudarte?"
               />
             </div>
+
+            {error && (
+              <p className="text-red-400 text-sm text-center">{error}</p>
+            )}
 
             <div className="pt-2">
               <Button
@@ -159,10 +142,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               >
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
-                    <svg
-                      className="animate-spin h-5 w-5"
-                      viewBox="0 0 24 24"
-                    >
+                    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
                       <circle
                         className="opacity-25"
                         cx="12"
