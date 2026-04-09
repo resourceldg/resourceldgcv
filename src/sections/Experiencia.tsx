@@ -126,9 +126,6 @@ export function Experiencia() {
                       {/* Header */}
                       <div className="flex flex-wrap items-center gap-3 mb-4">
                         <span className="text-lime font-semibold text-lg">{exp.empresa}</span>
-                        <span className="text-gray-3 text-sm px-3 py-1 rounded-full bg-gray-2">
-                          {exp.periodo}
-                        </span>
                       </div>
 
                       <h3 className="text-white font-medium text-sm sm:text-base md:text-lg mb-4">
