@@ -14,6 +14,16 @@ const experiencias = [
     ]
   },
   {
+    empresa: 'Consultoría digital',
+    periodo: '2017 – 2021',
+    titulo: 'Optimización de procesos para PyMEs',
+    logros: [
+      'Relevamiento de procesos y detección de oportunidades de mejora operativa.',
+      'Traducción de necesidades de negocio a soluciones tecnológicas concretas.',
+      'Implementación de herramientas y automatizaciones orientadas a eficiencia, orden y resultados medibles.'
+    ]
+  },
+  {
     empresa: 'Automatización e IA aplicada',
     periodo: '2024 – Presente',
     titulo: 'Diseño de agentes y flujos automatizados',
@@ -22,16 +32,6 @@ const experiencias = [
       'Orquestación de herramientas, APIs, bases de datos y lógica de negocio dentro de procesos automáticos.',
       'Modelado de soluciones para clasificación, consolidación y consulta de información.',
       'Aplicación de IA como capa de asistencia operativa, enfocada en utilidad real y mejora de productividad.'
-    ]
-  },
-  {
-    empresa: 'Consultoría digital',
-    periodo: '2017 – 2021',
-    titulo: 'Optimización de procesos para PyMEs',
-    logros: [
-      'Relevamiento de procesos y detección de oportunidades de mejora operativa.',
-      'Traducción de necesidades de negocio a soluciones tecnológicas concretas.',
-      'Implementación de herramientas y automatizaciones orientadas a eficiencia, orden y resultados medibles.'
     ]
   }
 ];
