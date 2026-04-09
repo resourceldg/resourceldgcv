@@ -68,9 +68,9 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-gray-1 border-gray-2 text-white max-w-md">
+      <DialogContent className="bg-gray-1 border-gray-2 text-white w-[95vw] sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-white flex items-center gap-3">
+          <DialogTitle className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-lime/10 flex items-center justify-center">
               <Mail className="w-5 h-5 text-lime" />
             </div>
@@ -79,7 +79,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         </DialogHeader>
 
         {isSubmitted ? (
-          <div className="py-8 text-center">
+          <div className="py-6 sm:py-8 text-center">
             <div className="w-16 h-16 rounded-full bg-lime/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-8 h-8 text-lime" />
             </div>
@@ -138,7 +138,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-lime text-black hover:bg-lime/90 font-semibold py-6 transition-all duration-300 hover:shadow-glow"
+                className="w-full bg-lime text-black hover:bg-lime/90 font-semibold py-4 sm:py-6 transition-all duration-300 hover:shadow-glow"
               >
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">

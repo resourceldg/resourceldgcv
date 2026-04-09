@@ -62,12 +62,12 @@ export function Experiencia() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+        <div className="text-center mb-10 sm:mb-14 md:mb-16">
+          <h2
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -92,7 +92,7 @@ export function Experiencia() {
           </div>
 
           {/* Experience items */}
-          <div className="space-y-12 md:space-y-16">
+          <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
             {experiencias.map((exp, index) => {
               const isLeft = index % 2 === 0;
               
@@ -121,8 +121,8 @@ export function Experiencia() {
                   </div>
 
                   {/* Content card */}
-                  <div className={`ml-12 md:ml-0 md:w-[45%] ${isLeft ? 'md:pr-12' : 'md:pl-12'}`}>
-                    <div className="group p-6 md:p-8 rounded-2xl bg-gray-1 border border-gray-2/50 hover:border-lime/30 transition-all duration-500 hover:shadow-glow">
+                  <div className={`ml-10 sm:ml-12 md:ml-0 md:w-[45%] ${isLeft ? 'md:pr-12' : 'md:pl-12'}`}>
+                    <div className="group p-4 sm:p-6 md:p-8 rounded-2xl bg-gray-1 border border-gray-2/50 hover:border-lime/30 transition-all duration-500 hover:shadow-glow">
                       {/* Header */}
                       <div className="flex flex-wrap items-center gap-3 mb-4">
                         <span className="text-lime font-semibold text-lg">{exp.empresa}</span>
@@ -131,7 +131,7 @@ export function Experiencia() {
                         </span>
                       </div>
 
-                      <h3 className="text-white font-medium text-base md:text-lg mb-4">
+                      <h3 className="text-white font-medium text-sm sm:text-base md:text-lg mb-4">
                         {exp.titulo}
                       </h3>
 

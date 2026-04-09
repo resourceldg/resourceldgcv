@@ -10,10 +10,10 @@ export function Footer() {
     <>
       <footer className="relative py-8 bg-black border-t border-gray-2/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
             {/* Logo/Name */}
             <div className="text-center md:text-left">
-              <span className="text-white font-semibold text-lg">ResourceLDG</span>
+              <span className="text-white font-semibold text-base sm:text-lg">ResourceLDG</span>
               <p className="text-gray-3 text-sm mt-1">
                 Lucas Daniel Gomez — Arquitecto de Automatización & Backend
               </p>

@@ -33,15 +33,15 @@ export function Enfoque() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black overflow-hidden">
       {/* Background accent */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-lime/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] bg-lime/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-12">
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -66,7 +66,7 @@ export function Enfoque() {
             >
               {/* Check icon with animation */}
               <div className="relative flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-lime/10 flex items-center justify-center group-hover:bg-lime/20 group-hover:scale-110 transition-all duration-300">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-lime/10 flex items-center justify-center group-hover:bg-lime/20 group-hover:scale-110 transition-all duration-300">
                   <Check 
                     className="w-5 h-5 text-lime" 
                     strokeWidth={3}
@@ -82,7 +82,7 @@ export function Enfoque() {
               </div>
 
               {/* Text */}
-              <span className="text-white text-base md:text-lg font-medium group-hover:text-lime transition-colors duration-300">
+              <span className="text-white text-sm sm:text-base md:text-lg font-medium group-hover:text-lime transition-colors duration-300">
                 {enfoque}
               </span>
             </div>

@@ -31,7 +31,7 @@ export function PropuestaValor() {
   };
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           className="relative rounded-3xl overflow-hidden"
@@ -66,9 +66,9 @@ export function PropuestaValor() {
           />
 
           {/* Content */}
-          <div className="relative z-10 p-8 md:p-12 lg:p-16">
+          <div className="relative z-10 p-5 sm:p-8 md:p-12 lg:p-16">
             <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
@@ -80,7 +80,7 @@ export function PropuestaValor() {
             </h2>
 
             <div 
-              className="space-y-6 text-gray-3 text-base md:text-lg leading-relaxed"
+              className="space-y-4 sm:space-y-6 text-gray-3 text-sm sm:text-base md:text-lg leading-relaxed"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(20px)',

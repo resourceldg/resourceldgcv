@@ -43,15 +43,15 @@ export function Capacidades() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-lime/[0.02] to-transparent pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+        <div className="text-center mb-10 sm:mb-14 md:mb-16">
+          <h2
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -63,7 +63,7 @@ export function Capacidades() {
         </div>
 
         {/* Skills grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {categorias.map((categoria, catIndex) => (
             <div 
               key={catIndex}
@@ -88,7 +88,7 @@ export function Capacidades() {
                   <span
                     key={skillIndex}
                     className={`
-                      px-4 py-2 rounded-full text-sm font-medium
+                      px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium
                       border transition-all duration-300 cursor-default
                       ${hoveredSkill === skill 
                         ? 'bg-lime text-black border-lime scale-110 shadow-glow' 

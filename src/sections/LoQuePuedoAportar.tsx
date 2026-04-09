@@ -64,15 +64,15 @@ export function LoQuePuedoAportar() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black">
       {/* Background accent */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-lime/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[200px] sm:w-[500px] sm:h-[300px] md:w-[800px] md:h-[400px] bg-lime/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+        <div className="text-center mb-10 sm:mb-14 md:mb-16">
+          <h2
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -85,7 +85,7 @@ export function LoQuePuedoAportar() {
         </div>
 
         {/* Cards grid - staggered layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
           {aportes.map((aporte, index) => {
             const Icon = aporte.icon;
             const isOdd = index % 2 === 0;

@@ -60,7 +60,7 @@ export function Idiomas() {
         </div>
 
         {/* Language bars */}
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {idiomas.map((idioma, index) => (
             <div
               key={index}
@@ -73,7 +73,7 @@ export function Idiomas() {
             >
               <div className="flex justify-between items-end mb-3">
                 <div>
-                  <span className="text-white font-semibold text-lg group-hover:text-lime transition-colors duration-300">
+                  <span className="text-white font-semibold text-base sm:text-lg group-hover:text-lime transition-colors duration-300">
                     {idioma.nombre}
                   </span>
                   <span className="text-gray-3 text-sm ml-3">

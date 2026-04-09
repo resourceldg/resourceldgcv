@@ -69,15 +69,15 @@ export function Seminarios() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black overflow-hidden">
       {/* Background accent */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-lime/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-lime/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-12">
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -87,7 +87,7 @@ export function Seminarios() {
             Seminarios y <span className="text-lime">Eventos</span>
           </h2>
           <p 
-            className="text-gray-3 text-base md:text-lg max-w-2xl mx-auto"
+            className="text-gray-3 text-sm sm:text-base md:text-lg max-w-2xl mx-auto"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
@@ -112,7 +112,7 @@ export function Seminarios() {
           </div>
 
           {/* Seminar items */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {seminarios.map((seminario, index) => {
               const isLeft = index % 2 === 0;
               
@@ -141,7 +141,7 @@ export function Seminarios() {
                   </div>
 
                   {/* Content card */}
-                  <div className={`ml-12 md:ml-0 md:w-[45%] ${isLeft ? 'md:pr-12' : 'md:pl-12'}`}>
+                  <div className={`ml-10 sm:ml-12 md:ml-0 md:w-[45%] ${isLeft ? 'md:pr-12' : 'md:pl-12'}`}>
                     <div className="group p-5 md:p-6 rounded-xl bg-gray-1 border border-gray-2/50 hover:border-lime/30 transition-all duration-500 hover:shadow-glow">
                       {/* Date badge */}
                       <div className="flex items-center gap-2 text-lime text-sm font-medium mb-2">

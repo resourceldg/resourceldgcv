@@ -45,12 +45,12 @@ export function Formacion() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-12">
-          <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+        <div className="text-center mb-8 sm:mb-12">
+          <h2
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -62,7 +62,7 @@ export function Formacion() {
         </div>
 
         {/* Education cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {formaciones.map((formacion, index) => {
             const Icon = formacion.icon;
             

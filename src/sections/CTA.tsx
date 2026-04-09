@@ -28,7 +28,7 @@ export function CTA() {
 
   return (
     <>
-      <section ref={sectionRef} className="relative py-24 md:py-32 bg-black overflow-hidden">
+      <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black overflow-hidden">
         {/* Animated radial gradient background */}
         <div 
           className="absolute inset-0"
@@ -39,20 +39,20 @@ export function CTA() {
         />
 
         {/* Floating shapes */}
-        <div className="absolute top-10 left-10 w-20 h-20 opacity-20">
+        <div className="absolute top-5 sm:top-10 left-5 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 opacity-20">
           <div className="w-full h-full rounded-full border border-lime/30 animate-float" />
         </div>
-        <div className="absolute bottom-10 right-10 w-32 h-32 opacity-20">
+        <div className="absolute bottom-5 sm:bottom-10 right-5 sm:right-10 w-20 h-20 sm:w-32 sm:h-32 opacity-20">
           <div className="w-full h-full rounded-full border border-lime/20 animate-float-delayed" />
         </div>
-        <div className="absolute top-1/2 right-20 w-16 h-16 opacity-10">
+        <div className="absolute top-1/2 right-8 sm:right-20 w-10 h-10 sm:w-16 sm:h-16 opacity-10">
           <div className="w-full h-full rounded-full bg-lime animate-float-slow" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Main text */}
           <p 
-            className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed mb-10"
+            className="text-base sm:text-xl md:text-2xl lg:text-3xl text-white leading-relaxed mb-8 sm:mb-10"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -68,7 +68,7 @@ export function CTA() {
 
           {/* Contact info */}
           <div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-10"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
@@ -102,7 +102,7 @@ export function CTA() {
             >
               <Button 
                 size="lg" 
-                className="bg-lime text-black hover:bg-lime/90 font-semibold px-10 py-7 text-lg animate-glow-pulse transition-all duration-300 hover:shadow-glow-lg hover:scale-105"
+                className="bg-lime text-black hover:bg-lime/90 font-semibold px-6 py-5 sm:px-10 sm:py-7 text-base sm:text-lg animate-glow-pulse transition-all duration-300 hover:shadow-glow-lg hover:scale-105"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Hablar por WhatsApp
@@ -112,7 +112,7 @@ export function CTA() {
               size="lg" 
               variant="outline" 
               onClick={() => setIsContactModalOpen(true)}
-              className="border-gray-2 text-white hover:bg-gray-1 hover:border-lime/50 font-semibold px-10 py-7 text-lg transition-all duration-300 hover:scale-105"
+              className="border-gray-2 text-white hover:bg-gray-1 hover:border-lime/50 font-semibold px-6 py-5 sm:px-10 sm:py-7 text-base sm:text-lg transition-all duration-300 hover:scale-105"
             >
               <Mail className="w-5 h-5 mr-2" />
               Escribirme por email

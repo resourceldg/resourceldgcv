@@ -24,13 +24,13 @@ export function Docencia() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 md:py-32 bg-black overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div>
             <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -41,7 +41,7 @@ export function Docencia() {
             </h2>
 
             <div 
-              className="space-y-4 text-gray-3 text-base md:text-lg leading-relaxed"
+              className="space-y-4 text-gray-3 text-sm sm:text-base md:text-lg leading-relaxed"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
@@ -68,7 +68,7 @@ export function Docencia() {
 
             {/* Stats or highlights */}
             <div 
-              className="grid grid-cols-2 gap-6 mt-8"
+              className="grid grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
