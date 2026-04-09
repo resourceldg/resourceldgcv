@@ -129,30 +129,30 @@ export function Hero() {
               transition: 'opacity 0.6s ease-out 1.2s'
             }}
           >
-            <button 
+            <button
               onClick={() => setIsContactModalOpen(true)}
-              className="text-gray-3 hover:text-lime transition-colors duration-300"
+              className="w-11 h-11 rounded-full bg-gray-1 flex items-center justify-center text-gray-3 hover:text-lime hover:bg-lime/10 transition-all duration-300"
               aria-label="Email"
             >
-              <Mail className="w-6 h-6" />
+              <Mail className="w-5 h-5" />
             </button>
-            <a 
-              href="https://www.linkedin.com/in/resourceldg/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/resourceldg/"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-3 hover:text-lime transition-colors duration-300"
+              className="w-11 h-11 rounded-full bg-gray-1 flex items-center justify-center text-gray-3 hover:text-lime hover:bg-lime/10 transition-all duration-300"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-6 h-6" />
+              <Linkedin className="w-5 h-5" />
             </a>
-            <a 
-              href="https://github.com/resourceldg" 
-              target="_blank" 
+            <a
+              href="https://github.com/resourceldg"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-3 hover:text-lime transition-colors duration-300"
+              className="w-11 h-11 rounded-full bg-gray-1 flex items-center justify-center text-gray-3 hover:text-lime hover:bg-lime/10 transition-all duration-300"
               aria-label="GitHub"
             >
-              <Github className="w-6 h-6" />
+              <Github className="w-5 h-5" />
             </a>
           </div>
         </div>
