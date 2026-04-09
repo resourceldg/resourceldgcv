@@ -1,0 +1,119 @@
+import { useEffect, useRef, useState } from 'react';
+
+export function PropuestaValor() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0.5, y: 0.5 });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    setMousePosition({ x, y });
+  };
+
+  return (
+    <section ref={sectionRef} className="relative py-24 md:py-32 bg-black">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div 
+          className="relative rounded-3xl overflow-hidden"
+          onMouseMove={handleMouseMove}
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'rotateX(0deg)' : 'rotateX(90deg)',
+            transition: 'all 1s cubic-bezier(0.16, 1, 0.3, 1)',
+            transformStyle: 'preserve-3d',
+            perspective: '1000px'
+          }}
+        >
+          {/* Glassmorphism card background */}
+          <div 
+            className="absolute inset-0 bg-gray-1/80 backdrop-blur-xl"
+            style={{
+              background: `radial-gradient(circle at ${mousePosition.x * 100}% ${mousePosition.y * 100}%, rgba(208, 255, 89, 0.08) 0%, transparent 50%)`
+            }}
+          />
+          
+          {/* Border gradient */}
+          <div className="absolute inset-0 rounded-3xl border border-gray-2/50" />
+          <div 
+            className="absolute inset-0 rounded-3xl border border-lime/20 pointer-events-none"
+            style={{
+              background: `linear-gradient(${mousePosition.x * 360}deg, rgba(208, 255, 89, 0.3) 0%, transparent 50%)`,
+              mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              maskComposite: 'xor',
+              WebkitMaskComposite: 'xor',
+              padding: '1px'
+            }}
+          />
+
+          {/* Content */}
+          <div className="relative z-10 p-8 md:p-12 lg:p-16">
+            <h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+                transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s'
+              }}
+            >
+              Propuesta de valor para{' '}
+              <span className="text-lime">su empresa</span>
+            </h2>
+
+            <div 
+              className="space-y-6 text-gray-3 text-base md:text-lg leading-relaxed"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+                transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s'
+              }}
+            >
+              <p>
+                Profesional con base sólida en <span className="text-white font-medium">backend</span>,{' '}
+                <span className="text-white font-medium">automatización</span>,{' '}
+                <span className="text-white font-medium">infraestructura</span> y diseño de soluciones con{' '}
+                <span className="text-white font-medium">IA aplicada</span>. Me especializo en transformar 
+                procesos manuales y repetitivos en flujos digitales más ordenados, trazables y escalables.
+              </p>
+
+              <p>
+                Puedo relevar operaciones administrativas y contables, detectar cuellos de botella, 
+                integrar sistemas externos y construir herramientas que ayuden a trabajar con múltiples 
+                clientes de forma más <span className="text-white font-medium">eficiente</span>,{' '}
+                <span className="text-white font-medium">segura</span> y{' '}
+                <span className="text-white font-medium">mantenible</span>.
+              </p>
+
+              <p>
+                Mi perfil combina <span className="text-lime font-medium">visión técnica</span>,{' '}
+                <span className="text-lime font-medium">criterio de negocio</span> y{' '}
+                <span className="text-lime font-medium">capacidad de implementación real</span>: desde la 
+                arquitectura y el modelado de datos hasta el despliegue, la estabilidad operativa y la 
+                evolución de la solución en producción.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
