@@ -2,18 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 
 const experiencias = [
   {
-    empresa: 'Bitnativo',
-    periodo: '2017 – Presente',
-    titulo: 'Diseño e implementación integral de plataforma web',
-    logros: [
-      'Diseño de arquitectura backend, modelo de datos, seguridad, despliegue e infraestructura.',
-      'Implementación integral de una solución mantenida en producción, con foco en confiabilidad y continuidad operativa.',
-      'Resolución de desafíos de rendimiento, disponibilidad y mantenimiento de plataforma.',
-      'Integración de componentes externos y adaptación técnica a necesidades reales del negocio.',
-      'Experiencia construyendo soluciones sostenibles, escalables y mantenibles en el tiempo.'
-    ]
-  },
-  {
     empresa: 'Consultoría digital',
     periodo: '2017 – 2021',
     titulo: 'Optimización de procesos para PyMEs',
@@ -32,6 +20,18 @@ const experiencias = [
       'Orquestación de herramientas, APIs, bases de datos y lógica de negocio dentro de procesos automáticos.',
       'Modelado de soluciones para clasificación, consolidación y consulta de información.',
       'Aplicación de IA como capa de asistencia operativa, enfocada en utilidad real y mejora de productividad.'
+    ]
+  },
+  {
+    empresa: 'Bitnativo',
+    periodo: '2017 – Presente',
+    titulo: 'Diseño e implementación integral de plataforma web',
+    logros: [
+      'Diseño de arquitectura backend, modelo de datos, seguridad, despliegue e infraestructura.',
+      'Implementación integral de una solución mantenida en producción, con foco en confiabilidad y continuidad operativa.',
+      'Resolución de desafíos de rendimiento, disponibilidad y mantenimiento de plataforma.',
+      'Integración de componentes externos y adaptación técnica a necesidades reales del negocio.',
+      'Experiencia construyendo soluciones sostenibles, escalables y mantenibles en el tiempo.'
     ]
   }
 ];
