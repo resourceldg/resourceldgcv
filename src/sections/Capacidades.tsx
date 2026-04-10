@@ -118,14 +118,14 @@ export function Capacidades() {
         >
           <defs>
             <linearGradient id="skillLineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#d0ff59" stopOpacity="0" />
-              <stop offset="50%" stopColor="#d0ff59" stopOpacity="0.3" />
-              <stop offset="100%" stopColor="#d0ff59" stopOpacity="0" />
+              <stop offset="0%" stopColor="#2dd4bf" stopOpacity="0" />
+              <stop offset="50%" stopColor="#2dd4bf" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#2dd4bf" stopOpacity="0" />
             </linearGradient>
           </defs>
-          <circle cx="200" cy="100" r="3" fill="#d0ff59" opacity="0.5" />
-          <circle cx="600" cy="300" r="3" fill="#d0ff59" opacity="0.5" />
-          <circle cx="400" cy="200" r="3" fill="#d0ff59" opacity="0.5" />
+          <circle cx="200" cy="100" r="3" fill="#2dd4bf" opacity="0.5" />
+          <circle cx="600" cy="300" r="3" fill="#2dd4bf" opacity="0.5" />
+          <circle cx="400" cy="200" r="3" fill="#2dd4bf" opacity="0.5" />
           <path 
             d="M200,100 Q400,150 600,300" 
             stroke="url(#skillLineGradient)" 

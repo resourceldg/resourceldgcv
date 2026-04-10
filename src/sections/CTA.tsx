@@ -33,7 +33,7 @@ export function CTA() {
         <div 
           className="absolute inset-0"
           style={{
-            background: 'radial-gradient(ellipse at center, rgba(208, 255, 89, 0.08) 0%, transparent 60%)',
+            background: 'radial-gradient(ellipse at center, rgba(45, 212, 191, 0.08) 0%, transparent 60%)',
             animation: 'pulse 4s ease-in-out infinite'
           }}
         />

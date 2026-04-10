@@ -137,9 +137,9 @@ export function LoQuePuedoAportar() {
         >
           <defs>
             <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#d0ff59" stopOpacity="0" />
-              <stop offset="50%" stopColor="#d0ff59" stopOpacity="0.5" />
-              <stop offset="100%" stopColor="#d0ff59" stopOpacity="0" />
+              <stop offset="0%" stopColor="#2dd4bf" stopOpacity="0" />
+              <stop offset="50%" stopColor="#2dd4bf" stopOpacity="0.5" />
+              <stop offset="100%" stopColor="#2dd4bf" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>

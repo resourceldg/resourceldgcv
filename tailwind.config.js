@@ -13,7 +13,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        lime: "#d0ff59",
+        lime: "#2dd4bf",
         black: "#0e0e0e",
         gray: {
           1: "#1a1a1a",
@@ -68,8 +68,8 @@ module.exports = {
       },
       boxShadow: {
         xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-        glow: "0 0 30px rgba(208, 255, 89, 0.3)",
-        "glow-lg": "0 0 60px rgba(208, 255, 89, 0.4)",
+        glow: "0 0 30px rgba(45, 212, 191, 0.3)",
+        "glow-lg": "0 0 60px rgba(45, 212, 191, 0.4)",
       },
       keyframes: {
         "accordion-down": {
@@ -105,8 +105,8 @@ module.exports = {
           to: { opacity: "1", transform: "scale(1)" },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(208, 255, 89, 0.3)" },
-          "50%": { boxShadow: "0 0 40px rgba(208, 255, 89, 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px rgba(45, 212, 191, 0.3)" },
+          "50%": { boxShadow: "0 0 40px rgba(45, 212, 191, 0.6)" },
         },
       },
       animation: {

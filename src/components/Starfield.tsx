@@ -86,7 +86,7 @@ export function Starfield() {
         ctx.beginPath();
         ctx.moveTo(star1.x, star1.y);
         ctx.lineTo(star2.x, star2.y);
-        ctx.strokeStyle = `rgba(208, 255, 89, ${opacity})`;
+        ctx.strokeStyle = `rgba(45, 212, 191, ${opacity})`;
         ctx.lineWidth = 0.5;
         ctx.stroke();
       });
@@ -110,8 +110,8 @@ export function Starfield() {
           star.y + mouseOffsetY,
           star.size * 3
         );
-        gradient.addColorStop(0, `rgba(208, 255, 89, ${currentOpacity * 0.5})`);
-        gradient.addColorStop(1, 'rgba(208, 255, 89, 0)');
+        gradient.addColorStop(0, `rgba(45, 212, 191, ${currentOpacity * 0.5})`);
+        gradient.addColorStop(1, 'rgba(45, 212, 191, 0)');
 
         ctx.beginPath();
         ctx.arc(star.x + mouseOffsetX, star.y + mouseOffsetY, star.size * 3, 0, Math.PI * 2);

@@ -48,7 +48,7 @@ export function PropuestaValor() {
           <div 
             className="absolute inset-0 bg-gray-1/80 backdrop-blur-xl"
             style={{
-              background: `radial-gradient(circle at ${mousePosition.x * 100}% ${mousePosition.y * 100}%, rgba(208, 255, 89, 0.08) 0%, transparent 50%)`
+              background: `radial-gradient(circle at ${mousePosition.x * 100}% ${mousePosition.y * 100}%, rgba(45, 212, 191, 0.08) 0%, transparent 50%)`
             }}
           />
           
@@ -57,7 +57,7 @@ export function PropuestaValor() {
           <div 
             className="absolute inset-0 rounded-3xl border border-lime/20 pointer-events-none"
             style={{
-              background: `linear-gradient(${mousePosition.x * 360}deg, rgba(208, 255, 89, 0.3) 0%, transparent 50%)`,
+              background: `linear-gradient(${mousePosition.x * 360}deg, rgba(45, 212, 191, 0.3) 0%, transparent 50%)`,
               mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
               maskComposite: 'xor',
               WebkitMaskComposite: 'xor',
