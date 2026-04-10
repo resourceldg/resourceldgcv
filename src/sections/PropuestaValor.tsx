@@ -67,7 +67,7 @@ export function PropuestaValor() {
 
           {/* Content */}
           <div className="relative z-10 p-5 sm:p-8 md:p-12 lg:p-16">
-            <h2 
+            <h2
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8"
               style={{
                 opacity: isVisible ? 1 : 0,
@@ -75,11 +75,10 @@ export function PropuestaValor() {
                 transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s'
               }}
             >
-              Propuesta de valor para{' '}
-              <span className="text-lime">su empresa</span>
+              Propuesta de <span className="text-lime">valor</span>
             </h2>
 
-            <div 
+            <div
               className="space-y-4 sm:space-y-6 text-gray-3 text-sm sm:text-base md:text-lg leading-relaxed"
               style={{
                 opacity: isVisible ? 1 : 0,
@@ -88,27 +87,28 @@ export function PropuestaValor() {
               }}
             >
               <p>
-                Profesional con base sólida en <span className="text-white font-medium">backend</span>,{' '}
+                Profesional con base en <span className="text-white font-medium">arquitectura de software</span>,{' '}
+                <span className="text-white font-medium">backend</span>,{' '}
                 <span className="text-white font-medium">automatización</span>,{' '}
-                <span className="text-white font-medium">infraestructura</span> y diseño de soluciones con{' '}
-                <span className="text-white font-medium">IA aplicada</span>. Me especializo en transformar 
-                procesos manuales y repetitivos en flujos digitales más ordenados, trazables y escalables.
+                <span className="text-white font-medium">infraestructura</span> e{' '}
+                <span className="text-white font-medium">IA aplicada</span>. Trabajo en la intersección
+                entre sistemas, procesos, creatividad y experimentación.
               </p>
 
               <p>
-                Puedo relevar operaciones administrativas y contables, detectar cuellos de botella, 
-                integrar sistemas externos y construir herramientas que ayuden a trabajar con múltiples 
-                clientes de forma más <span className="text-white font-medium">eficiente</span>,{' '}
-                <span className="text-white font-medium">segura</span> y{' '}
-                <span className="text-white font-medium">mantenible</span>.
+                Me especializo en transformar ideas, necesidades operativas o flujos complejos en
+                soluciones concretas: plataformas, integraciones, pipelines, agentes, herramientas
+                internas y entornos digitales{' '}
+                <span className="text-white font-medium">mantenibles</span>.
               </p>
 
               <p>
-                Mi perfil combina <span className="text-lime font-medium">visión técnica</span>,{' '}
-                <span className="text-lime font-medium">criterio de negocio</span> y{' '}
-                <span className="text-lime font-medium">capacidad de implementación real</span>: desde la 
-                arquitectura y el modelado de datos hasta el despliegue, la estabilidad operativa y la 
-                evolución de la solución en producción.
+                Puedo aportar tanto en contextos técnicos como en equipos donde se combinan{' '}
+                <span className="text-lime font-medium">producto</span>,{' '}
+                <span className="text-lime font-medium">diseño</span>,{' '}
+                <span className="text-lime font-medium">investigación</span>,{' '}
+                <span className="text-lime font-medium">datos</span> o{' '}
+                <span className="text-lime font-medium">exploración interdisciplinaria</span>.
               </p>
             </div>
           </div>

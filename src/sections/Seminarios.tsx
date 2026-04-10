@@ -76,7 +76,7 @@ export function Seminarios() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-12">
-          <h2 
+          <h2
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
             style={{
               opacity: isVisible ? 1 : 0,
@@ -84,9 +84,9 @@ export function Seminarios() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
             }}
           >
-            Seminarios y <span className="text-lime">Eventos</span>
+            Formación complementaria y <span className="text-lime">comunidad</span>
           </h2>
-          <p 
+          <p
             className="text-gray-3 text-sm sm:text-base md:text-lg max-w-2xl mx-auto"
             style={{
               opacity: isVisible ? 1 : 0,
@@ -94,7 +94,7 @@ export function Seminarios() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s'
             }}
           >
-            Participación activa en eventos de la industria tecnológica
+            Participación en eventos de tecnología, innovación y emprendimiento
           </p>
         </div>
 

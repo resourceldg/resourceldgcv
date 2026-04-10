@@ -29,7 +29,7 @@ export function Docencia() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div>
-            <h2 
+            <h2
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
               style={{
                 opacity: isVisible ? 1 : 0,
@@ -37,10 +37,10 @@ export function Docencia() {
                 transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
               }}
             >
-              Docencia y <span className="text-lime">liderazgo técnico</span>
+              Docencia y <span className="text-lime">transferencia de conocimiento</span>
             </h2>
 
-            <div 
+            <div
               className="space-y-4 text-gray-3 text-sm sm:text-base md:text-lg leading-relaxed"
               style={{
                 opacity: isVisible ? 1 : 0,
@@ -49,7 +49,7 @@ export function Docencia() {
               }}
             >
               <p>
-                Docente de nivel superior en áreas vinculadas a{' '}
+                Docente de nivel superior en{' '}
                 <span className="text-white font-medium">programación</span>,{' '}
                 <span className="text-white font-medium">inteligencia artificial</span>,{' '}
                 <span className="text-white font-medium">seguridad</span>,{' '}
@@ -58,11 +58,13 @@ export function Docencia() {
               </p>
 
               <p>
-                Esta experiencia fortaleció mi capacidad para{' '}
-                <span className="text-lime font-medium">estructurar problemas</span>,{' '}
-                <span className="text-lime font-medium">explicar procesos complejos con claridad</span> y{' '}
-                <span className="text-lime font-medium">traducir conceptos técnicos</span> en soluciones 
-                comprensibles y aplicables.
+                Experiencia explicando conceptos complejos, estructurando conocimiento y
+                trabajando en la intersección entre{' '}
+                <span className="text-lime font-medium">tecnología</span>,{' '}
+                <span className="text-lime font-medium">aprendizaje</span> y{' '}
+                <span className="text-lime font-medium">práctica aplicada</span>.
+                Transmite pensamiento conceptual, criterio y capacidad de articular ideas
+                en contextos interdisciplinarios.
               </p>
             </div>
 

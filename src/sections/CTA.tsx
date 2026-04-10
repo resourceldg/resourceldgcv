@@ -59,11 +59,12 @@ export function CTA() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
             }}
           >
-            Estoy interesado en aportar valor en entornos donde la tecnología pueda{' '}
-            <span className="text-lime font-medium">reducir carga operativa</span>,{' '}
-            <span className="text-lime font-medium">mejorar trazabilidad</span> y{' '}
-            <span className="text-lime font-medium">escalar procesos repetitivos</span> con criterio, 
-            estabilidad y visión de largo plazo.
+            Trabajo donde se cruzan{' '}
+            <span className="text-lime font-medium">software</span>,{' '}
+            <span className="text-lime font-medium">automatización</span>,{' '}
+            <span className="text-lime font-medium">pensamiento sistémico</span>,{' '}
+            creatividad e investigación. Si tu proyecto necesita alguien que pueda ir
+            de la idea a la implementación, hablemos.
           </p>
 
           {/* Contact info */}

@@ -2,36 +2,36 @@ import { useEffect, useRef, useState } from 'react';
 
 const experiencias = [
   {
-    empresa: 'Consultoría digital',
-    periodo: '2017 – 2021',
-    titulo: 'Optimización de procesos para PyMEs',
-    logros: [
-      'Relevamiento de procesos y detección de oportunidades de mejora operativa.',
-      'Traducción de necesidades de negocio a soluciones tecnológicas concretas.',
-      'Implementación de herramientas y automatizaciones orientadas a eficiencia, orden y resultados medibles.'
-    ]
-  },
-  {
     empresa: 'Automatización e IA aplicada',
     periodo: '2024 – Presente',
-    titulo: 'Diseño de agentes y flujos automatizados',
+    titulo: 'Diseño de agentes, herramientas y flujos automatizados',
     logros: [
-      'Diseño de agentes y flujos automatizados para tareas repetitivas y procesos basados en reglas.',
-      'Orquestación de herramientas, APIs, bases de datos y lógica de negocio dentro de procesos automáticos.',
-      'Modelado de soluciones para clasificación, consolidación y consulta de información.',
-      'Aplicación de IA como capa de asistencia operativa, enfocada en utilidad real y mejora de productividad.'
+      'Diseño de agentes y flujos automáticos para tareas complejas o repetitivas.',
+      'Integración con APIs, bases de datos, memoria y herramientas externas.',
+      'Desarrollo de soluciones de IA orientadas a utilidad real, exploración y productividad.',
+      'Aplicación de pensamiento sistémico para traducir problemas difusos en arquitecturas ejecutables.'
     ]
   },
   {
     empresa: 'Bitnativo',
     periodo: '2017 – Presente',
-    titulo: 'Diseño e implementación integral de plataforma web',
+    titulo: 'Diseño e implementación integral de plataforma digital',
     logros: [
-      'Diseño de arquitectura backend, modelo de datos, seguridad, despliegue e infraestructura.',
-      'Implementación integral de una solución mantenida en producción, con foco en confiabilidad y continuidad operativa.',
-      'Resolución de desafíos de rendimiento, disponibilidad y mantenimiento de plataforma.',
-      'Integración de componentes externos y adaptación técnica a necesidades reales del negocio.',
-      'Experiencia construyendo soluciones sostenibles, escalables y mantenibles en el tiempo.'
+      'Arquitectura backend, modelado de datos, despliegue, seguridad e infraestructura.',
+      'Construcción de una solución real sostenida en producción.',
+      'Integración de componentes externos y adaptación a requerimientos cambiantes.',
+      'Resolución de desafíos de performance, disponibilidad y mantenimiento.',
+      'Experiencia end-to-end: de la idea a la operación estable.'
+    ]
+  },
+  {
+    empresa: 'Consultoría digital',
+    periodo: '2017 – 2021',
+    titulo: 'Optimización de procesos para organizaciones',
+    logros: [
+      'Relevamiento de necesidades y diseño de soluciones tecnológicas.',
+      'Mejora de procesos, automatización y organización operativa.',
+      'Implementación práctica con foco en resultados y sostenibilidad.'
     ]
   }
 ];
@@ -74,10 +74,7 @@ export function Experiencia() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
             }}
           >
-            Experiencia relevante para{' '}
-            <span className="text-lime">entornos operativos</span>
-            <br />
-            <span className="text-lime">y multi-cliente</span>
+            Experiencia <span className="text-lime">relevante</span>
           </h2>
         </div>
 

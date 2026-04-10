@@ -72,11 +72,11 @@ export function Hero() {
               transition: 'all 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s'
             }}
           >
-            Arquitecto de Automatización, Backend e IA aplicada a procesos contables multiempresa
+            Arquitecto de Software, Automatización e IA aplicada
           </p>
 
           {/* Description */}
-          <p 
+          <p
             className="text-base sm:text-lg text-gray-3 max-w-2xl mx-auto mb-10 leading-relaxed"
             style={{
               opacity: isLoaded ? 1 : 0,
@@ -84,8 +84,8 @@ export function Hero() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s'
             }}
           >
-            Diseño e implemento sistemas, integraciones y flujos automatizados para reducir tareas manuales, 
-            mejorar trazabilidad y escalar operaciones repetitivas en entornos con múltiples clientes.
+            Diseño y construyo sistemas, flujos automatizados y herramientas basadas en software e IA
+            para organizaciones que trabajan con complejidad, creatividad, datos e innovación.
           </p>
 
           {/* CTA Buttons */}
@@ -137,7 +137,7 @@ export function Hero() {
               <Mail className="w-5 h-5" />
             </button>
             <a
-              href="https://www.linkedin.com/in/resourceldg/"
+              href="https://www.linkedin.com/in/lucasgomezcv/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-gray-1 flex items-center justify-center text-gray-3 hover:text-lime hover:bg-lime/10 transition-all duration-300"

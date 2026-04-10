@@ -11,33 +11,33 @@ import {
 const aportes = [
   {
     icon: Workflow,
-    title: 'Automatización de tareas mensuales repetitivas',
-    description: 'Diseño de flujos para reducir carga operativa en procesos periódicos, validaciones, consolidación de información y generación de entregables por cliente.'
+    title: 'Sistemas y herramientas a medida',
+    description: 'Diseño e implementación de soluciones digitales adaptadas a necesidades reales de operación, experimentación o producción.'
   },
   {
     icon: Plug,
-    title: 'Integración con sistemas externos',
-    description: 'Conexión de APIs, ERPs, plataformas de gestión, servicios fiscales, herramientas internas y otras fuentes de datos necesarias para centralizar operaciones.'
-  },
-  {
-    icon: Database,
-    title: 'Pipelines de datos multiempresa',
-    description: 'Estructuras preparadas para trabajar con múltiples clientes de manera aislada, ordenada, auditable y escalable.'
-  },
-  {
-    icon: BarChart3,
-    title: 'Reporting y seguimiento operativo',
-    description: 'Automatización de reportes, resúmenes por cliente, tableros de control y procesos de trazabilidad para mejorar visibilidad y control.'
-  },
-  {
-    icon: Shield,
-    title: 'Seguridad y estabilidad de la operación',
-    description: 'Implementación de soluciones confiables, con foco en continuidad operativa, buenas prácticas de infraestructura y protección de la información.'
+    title: 'Automatización de procesos',
+    description: 'Reducción de tareas manuales, estandarización de flujos y mejora de eficiencia en procesos repetitivos o sensibles al error.'
   },
   {
     icon: Brain,
-    title: 'IA aplicada a operaciones internas',
-    description: 'Diseño de asistentes y agentes para clasificación, validación, consulta y soporte sobre procesos internos basados en reglas, documentos y datos.'
+    title: 'IA aplicada a flujos reales',
+    description: 'Diseño de agentes, asistentes y procesos con LLMs integrados a APIs, bases de datos, documentos o herramientas externas.'
+  },
+  {
+    icon: Database,
+    title: 'Arquitecturas para entornos complejos',
+    description: 'Sistemas mantenibles, escalables y pensados para evolucionar con el tiempo, adaptados a contextos de alta complejidad o experimentación.'
+  },
+  {
+    icon: BarChart3,
+    title: 'Integración entre disciplinas y sistemas',
+    description: 'Capacidad de traducir necesidades de negocio, investigación, producto o creación en soluciones técnicas accionables y sostenibles.'
+  },
+  {
+    icon: Shield,
+    title: 'Prototipado e I+D',
+    description: 'Exploración técnica, validación rápida de ideas y construcción de pruebas funcionales para contextos innovadores o de investigación aplicada.'
   }
 ];
 
@@ -79,8 +79,7 @@ export function LoQuePuedoAportar() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
             }}
           >
-            Lo que puedo aportar a{' '}
-            <span className="text-lime">su empresa</span>
+            Qué puedo <span className="text-lime">aportar</span>
           </h2>
         </div>
 

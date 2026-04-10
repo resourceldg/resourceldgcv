@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import { Check } from 'lucide-react';
 
 const enfoques = [
-  'Automatización de procesos repetitivos con foco operativo',
-  'Diseño de flujos para entornos con múltiples clientes',
-  'Integración entre sistemas y fuentes de datos',
-  'Estructuración y trazabilidad de procesos mensuales',
-  'Soluciones mantenibles, escalables y seguras',
-  'IA aplicada a tareas concretas de soporte y validación'
+  'Arquitectura de software pensada para entornos complejos o experimentales',
+  'Automatización de procesos y reducción de carga operativa',
+  'IA aplicada a flujos reales: agentes, integraciones y herramientas útiles',
+  'Integración entre sistemas, APIs y fuentes de datos heterogéneas',
+  'Soluciones mantenibles, escalables y construidas para durar',
+  'Traducción de problemas difusos en arquitecturas ejecutables'
 ];
 
 export function Enfoque() {
@@ -48,7 +48,7 @@ export function Enfoque() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
             }}
           >
-            Enfoque para el <span className="text-lime">rol</span>
+            Cómo <span className="text-lime">trabajo</span>
           </h2>
         </div>
 

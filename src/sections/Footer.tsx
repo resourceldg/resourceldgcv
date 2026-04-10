@@ -38,7 +38,7 @@ export function Footer() {
                 <MessageCircle className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/resourceldg/"
+                href="https://www.linkedin.com/in/lucasgomezcv/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-1 flex items-center justify-center text-gray-3 hover:text-lime hover:bg-lime/10 transition-all duration-300"

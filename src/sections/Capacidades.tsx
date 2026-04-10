@@ -2,20 +2,20 @@ import { useEffect, useRef, useState } from 'react';
 
 const categorias = [
   {
-    nombre: 'Automatización y arquitectura',
-    skills: ['Python', 'Django', 'APIs REST', 'Orquestación de procesos', 'Integración con servicios externos', 'Diseño de soluciones multi-cliente']
+    nombre: 'Capacidades clave',
+    skills: ['Arquitectura de software', 'Automatización de procesos', 'Backend y APIs', 'IA aplicada', 'Integración de sistemas', 'Modelado de datos', 'Infraestructura y despliegue', 'Pensamiento interdisciplinario']
   },
   {
-    nombre: 'Datos y operaciones',
-    skills: ['PostgreSQL', 'Modelado de datos', 'Validación y consolidación de información', 'Reporting automatizado', 'Trazabilidad de procesos']
+    nombre: 'Stack',
+    skills: ['Python', 'Django', 'PostgreSQL', 'Docker', 'OpenAI API', 'LangChain', 'Linux', 'Nginx', 'Git', 'Pandas']
   },
   {
-    nombre: 'IA aplicada',
-    skills: ['LLMs', 'Agentes', 'Automatización asistida con IA', 'Herramientas externas y memoria', 'Flujos orientados a operaciones']
+    nombre: 'Ámbitos de interés',
+    skills: ['Creative technology', 'R&D', 'Herramientas internas', 'Ciencia de datos', 'Sistemas experimentales', 'Educación tecnológica', 'Producto digital', 'Automatización inteligente']
   },
   {
-    nombre: 'Infraestructura y despliegue',
-    skills: ['Linux', 'Nginx', 'Gunicorn', 'Docker', 'Seguridad web y configuración de entornos']
+    nombre: 'Idiomas',
+    skills: ['Español — Nativo', 'Inglés — Técnico / documentación']
   }
 ];
 
