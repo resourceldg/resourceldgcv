@@ -72,7 +72,7 @@ export function Hero() {
               transition: 'all 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s'
             }}
           >
-            Arquitecto de Software, Automatización e IA aplicada
+            Software Architect · AI Automation · Multidisciplinary Builder
           </p>
 
           {/* Description */}
@@ -84,8 +84,9 @@ export function Hero() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s'
             }}
           >
-            Diseño y construyo sistemas, flujos automatizados y herramientas basadas en software e IA
-            para organizaciones que trabajan con complejidad, creatividad, datos e innovación.
+            Diseño y construyo sistemas, herramientas y flujos automatizados para organizaciones
+            que trabajan con complejidad, innovación y exploración.{' '}
+            Me muevo entre la idea, la arquitectura y la implementación.
           </p>
 
           {/* CTA Buttons */}

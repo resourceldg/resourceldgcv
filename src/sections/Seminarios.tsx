@@ -94,7 +94,7 @@ export function Seminarios() {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s'
             }}
           >
-            Participación en eventos de tecnología, innovación y emprendimiento
+            Participación en eventos de tecnología, innovación y exploración interdisciplinaria.
           </p>
         </div>
 

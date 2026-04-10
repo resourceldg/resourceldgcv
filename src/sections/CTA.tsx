@@ -62,9 +62,10 @@ export function CTA() {
             Trabajo donde se cruzan{' '}
             <span className="text-lime font-medium">software</span>,{' '}
             <span className="text-lime font-medium">automatización</span>,{' '}
-            <span className="text-lime font-medium">pensamiento sistémico</span>,{' '}
-            creatividad e investigación. Si tu proyecto necesita alguien que pueda ir
-            de la idea a la implementación, hablemos.
+            <span className="text-lime font-medium">IA</span>,{' '}
+            pensamiento sistémico y exploración real.{' '}
+            Si tu proyecto necesita alguien que pueda ir de la idea a la implementación,
+            hablemos.
           </p>
 
           {/* Contact info */}

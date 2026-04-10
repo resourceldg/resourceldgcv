@@ -4,12 +4,12 @@ const experiencias = [
   {
     empresa: 'Automatización e IA aplicada',
     periodo: '2024 – Presente',
-    titulo: 'Diseño de agentes, herramientas y flujos automatizados',
+    titulo: 'Diseño de agentes, flujos e infraestructura inteligente',
     logros: [
-      'Diseño de agentes y flujos automáticos para tareas complejas o repetitivas.',
-      'Integración con APIs, bases de datos, memoria y herramientas externas.',
-      'Desarrollo de soluciones de IA orientadas a utilidad real, exploración y productividad.',
-      'Aplicación de pensamiento sistémico para traducir problemas difusos en arquitecturas ejecutables.'
+      'Diseño de agentes y flujos automáticos para tareas complejas o repetitivas con lógica real.',
+      'Integración con APIs, bases de datos, memoria persistente y herramientas externas.',
+      'Desarrollo orientado a utilidad: IA que resuelve algo concreto, no demos.',
+      'Aplicación de pensamiento sistémico para convertir problemas difusos en arquitecturas ejecutables.'
     ]
   },
   {
@@ -17,21 +17,20 @@ const experiencias = [
     periodo: '2017 – Presente',
     titulo: 'Diseño e implementación integral de plataforma digital',
     logros: [
-      'Arquitectura backend, modelado de datos, despliegue, seguridad e infraestructura.',
-      'Construcción de una solución real sostenida en producción.',
-      'Integración de componentes externos y adaptación a requerimientos cambiantes.',
-      'Resolución de desafíos de performance, disponibilidad y mantenimiento.',
-      'Experiencia end-to-end: de la idea a la operación estable.'
+      'Arquitectura backend, modelado de datos, seguridad, despliegue e infraestructura desde cero.',
+      'Construcción y operación sostenida de una solución real en producción.',
+      'Resolución de problemas de performance, disponibilidad y mantenimiento a lo largo del tiempo.',
+      'Experiencia end-to-end: de la idea al sistema que funciona hoy.'
     ]
   },
   {
     empresa: 'Consultoría digital',
     periodo: '2017 – 2021',
-    titulo: 'Optimización de procesos para organizaciones',
+    titulo: 'Tecnología aplicada a organizaciones',
     logros: [
-      'Relevamiento de necesidades y diseño de soluciones tecnológicas.',
-      'Mejora de procesos, automatización y organización operativa.',
-      'Implementación práctica con foco en resultados y sostenibilidad.'
+      'Relevamiento de procesos, detección de fricciones y diseño de soluciones tecnológicas adaptadas.',
+      'Implementación de herramientas y automatizaciones con foco en resultados medibles.',
+      'Trabajo directo con equipos no técnicos para traducir necesidades en sistemas usables.'
     ]
   }
 ];

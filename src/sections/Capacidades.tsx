@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const categorias = [
   {
     nombre: 'Capacidades clave',
-    skills: ['Arquitectura de software', 'Automatización de procesos', 'Backend y APIs', 'IA aplicada', 'Integración de sistemas', 'Modelado de datos', 'Infraestructura y despliegue', 'Pensamiento interdisciplinario']
+    skills: ['Arquitectura de software', 'Automatización de procesos', 'Backend y APIs REST', 'IA aplicada', 'Integración de sistemas', 'Modelado de datos', 'Infraestructura y despliegue', 'Pensamiento sistémico', 'Traducción técnico-conceptual']
   },
   {
     nombre: 'Stack',
@@ -11,11 +11,11 @@ const categorias = [
   },
   {
     nombre: 'Ámbitos de interés',
-    skills: ['Creative technology', 'R&D', 'Herramientas internas', 'Ciencia de datos', 'Sistemas experimentales', 'Educación tecnológica', 'Producto digital', 'Automatización inteligente']
+    skills: ['Creative technology', 'R&D', 'Herramientas internas', 'Ciencia de datos', 'Sistemas experimentales', 'Educación tecnológica', 'Producto digital', 'Investigación aplicada']
   },
   {
     nombre: 'Idiomas',
-    skills: ['Español — Nativo', 'Inglés — Técnico / documentación']
+    skills: ['Español — Nativo', 'Inglés — Técnico / documentación / herramientas']
   }
 ];
 

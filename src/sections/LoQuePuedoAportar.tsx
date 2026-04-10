@@ -12,32 +12,32 @@ const aportes = [
   {
     icon: Workflow,
     title: 'Sistemas y herramientas a medida',
-    description: 'Diseño e implementación de soluciones digitales adaptadas a necesidades reales de operación, experimentación o producción.'
+    description: 'Soluciones digitales diseñadas para necesidades reales: plataformas, herramientas internas, entornos de producción. Sin sobrediseño, sin deuda técnica innecesaria.'
   },
   {
     icon: Plug,
     title: 'Automatización de procesos',
-    description: 'Reducción de tareas manuales, estandarización de flujos y mejora de eficiencia en procesos repetitivos o sensibles al error.'
+    description: 'Identifico lo que consume tiempo o genera error y lo convierto en flujo. Desde scripts simples hasta pipelines complejos con lógica de negocio real.'
   },
   {
     icon: Brain,
-    title: 'IA aplicada a flujos reales',
-    description: 'Diseño de agentes, asistentes y procesos con LLMs integrados a APIs, bases de datos, documentos o herramientas externas.'
+    title: 'IA aplicada a contextos reales',
+    description: 'Agentes, asistentes y flujos con LLMs integrados a APIs, bases de datos, documentos y herramientas externas. IA que hace algo útil, no IA decorativa.'
   },
   {
     icon: Database,
     title: 'Arquitecturas para entornos complejos',
-    description: 'Sistemas mantenibles, escalables y pensados para evolucionar con el tiempo, adaptados a contextos de alta complejidad o experimentación.'
+    description: 'Diseño sistemas que pueden crecer, cambiar y sostenerse. Con criterio de infraestructura, datos y seguridad desde el principio.'
   },
   {
     icon: BarChart3,
-    title: 'Integración entre disciplinas y sistemas',
-    description: 'Capacidad de traducir necesidades de negocio, investigación, producto o creación en soluciones técnicas accionables y sostenibles.'
+    title: 'Integración entre sistemas y disciplinas',
+    description: 'Conecto tecnologías, fuentes de datos y necesidades de negocio. También conecto perfiles técnicos con perfiles no técnicos.'
   },
   {
     icon: Shield,
-    title: 'Prototipado e I+D',
-    description: 'Exploración técnica, validación rápida de ideas y construcción de pruebas funcionales para contextos innovadores o de investigación aplicada.'
+    title: 'Prototipado e I+D técnico',
+    description: 'Validación rápida de ideas, exploración técnica y construcción de pruebas funcionales para proyectos experimentales o de investigación aplicada.'
   }
 ];
 

@@ -87,28 +87,27 @@ export function PropuestaValor() {
               }}
             >
               <p>
-                Profesional con base en <span className="text-white font-medium">arquitectura de software</span>,{' '}
+                Tengo base técnica en <span className="text-white font-medium">arquitectura de software</span>,{' '}
                 <span className="text-white font-medium">backend</span>,{' '}
-                <span className="text-white font-medium">automatización</span>,{' '}
-                <span className="text-white font-medium">infraestructura</span> e{' '}
-                <span className="text-white font-medium">IA aplicada</span>. Trabajo en la intersección
-                entre sistemas, procesos, creatividad y experimentación.
+                <span className="text-white font-medium">automatización</span> e{' '}
+                <span className="text-white font-medium">IA</span>. Pero mi diferencial no es solo
+                lo que puedo construir: es la capacidad de entender un problema complejo, diseñar
+                una solución coherente y llevarlo a producción con criterio real.
               </p>
 
               <p>
-                Me especializo en transformar ideas, necesidades operativas o flujos complejos en
-                soluciones concretas: plataformas, integraciones, pipelines, agentes, herramientas
-                internas y entornos digitales{' '}
-                <span className="text-white font-medium">mantenibles</span>.
+                Me muevo bien en contextos donde la tecnología y la idea necesitan conversar: donde
+                no alcanza con ejecutar, sino que hace falta{' '}
+                <span className="text-white font-medium">pensar el sistema</span>,{' '}
+                <span className="text-white font-medium">traducir la necesidad</span> y tomar
+                decisiones con consecuencias.
               </p>
 
               <p>
-                Puedo aportar tanto en contextos técnicos como en equipos donde se combinan{' '}
-                <span className="text-lime font-medium">producto</span>,{' '}
-                <span className="text-lime font-medium">diseño</span>,{' '}
-                <span className="text-lime font-medium">investigación</span>,{' '}
-                <span className="text-lime font-medium">datos</span> o{' '}
-                <span className="text-lime font-medium">exploración interdisciplinaria</span>.
+                Trabajo con equipos técnicos, con equipos creativos y con equipos que operan en
+                la intersección. Puedo ser el punto de contacto entre{' '}
+                <span className="text-lime font-medium">lo que se necesita</span> y{' '}
+                <span className="text-lime font-medium">lo que se puede construir</span>.
               </p>
             </div>
           </div>

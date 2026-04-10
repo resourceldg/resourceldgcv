@@ -58,13 +58,17 @@ export function Docencia() {
               </p>
 
               <p>
-                Experiencia explicando conceptos complejos, estructurando conocimiento y
-                trabajando en la intersección entre{' '}
+                Esta dimensión no es paralela a mi trabajo técnico: la informa. Enseñar
+                obliga a entender en profundidad, a estructurar lo complejo, a encontrar
+                la analogía correcta. Es donde se prueba si realmente se entiende algo.
+              </p>
+
+              <p>
+                Tengo experiencia trabajando en la frontera entre{' '}
                 <span className="text-lime font-medium">tecnología</span>,{' '}
-                <span className="text-lime font-medium">aprendizaje</span> y{' '}
+                <span className="text-lime font-medium">pensamiento crítico</span> y{' '}
                 <span className="text-lime font-medium">práctica aplicada</span>.
-                Transmite pensamiento conceptual, criterio y capacidad de articular ideas
-                en contextos interdisciplinarios.
+                Puedo explicar lo que hago, no solo hacerlo.
               </p>
             </div>
 
@@ -93,7 +97,7 @@ export function Docencia() {
                 <div className="w-10 h-10 rounded-lg bg-lime/10 flex items-center justify-center">
                   <Lightbulb className="w-5 h-5 text-lime" />
                 </div>
-                <span className="text-gray-3 text-sm">Pensamiento crítico</span>
+                <span className="text-gray-3 text-sm">Interdisciplinario</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-lime/10 flex items-center justify-center">

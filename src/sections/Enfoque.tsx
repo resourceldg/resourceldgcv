@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import { Check } from 'lucide-react';
 
 const enfoques = [
-  'Arquitectura de software pensada para entornos complejos o experimentales',
-  'Automatización de procesos y reducción de carga operativa',
-  'IA aplicada a flujos reales: agentes, integraciones y herramientas útiles',
-  'Integración entre sistemas, APIs y fuentes de datos heterogéneas',
-  'Soluciones mantenibles, escalables y construidas para durar',
-  'Traducción de problemas difusos en arquitecturas ejecutables'
+  'Entiendo el problema antes de escribir una línea.',
+  'Diseño el sistema antes de elegir las herramientas.',
+  'Construyo para que funcione hoy y pueda cambiar mañana.',
+  'Traduzco entre lo que se necesita y lo que se puede implementar.',
+  'Trabajo bien solo y en equipos con perfiles distintos al mío.',
+  'No entrego demos: entrego cosas que resuelven algo real.'
 ];
 
 export function Enfoque() {
